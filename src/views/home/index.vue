@@ -12,6 +12,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import "swiper/css/effect-fade";
 
+import DescribeVue from './describe.vue';
+import HotSaleVue from './hot-sale.vue';
+
 </script>
 
 <template>
@@ -29,45 +32,10 @@ import "swiper/css/effect-fade";
         <img src="../../assets/banner/Antminer_L7_179802d9-0cd5-493d-a7c6-27f92a29075e_1920x900.progressive.webp" alt="">
       </swiper-slide>
     </swiper>
+
     <div class="mx-auto lg:w-9/12 w-11/12 max-w-7xl">
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
-      <h1>1</h1>
+      <DescribeVue />
+      <HotSaleVue />
     </div>
   </div>
 </template>

@@ -14,18 +14,24 @@ nextTick(() => {
 </script>
 
 <template>
-  <header class="w-full sticky top-0 z-50 lg:h-28 h-16 bg-[#128aedb3]"
-    :class="markState ? 'lg:absolute lg:bg-[#ffffff33]' : 'lg:fixed lg:bg-[#128aedb3]'">
+  <header class="w-full sticky top-0 z-50 bg-[#128aedb3]"
+    :class="markState ? 'lg:absolute lg:bg-[#ffffff33] lg:h-28 h-16' : 'lg:fixed lg:bg-[#128aedb3] h-16'">
     <div class="flex items-center lg:justify-start justify-between h-full mx-auto lg:w-9/12 w-11/12 max-w-7xl">
       <div class="mr-24">logo</div>
       <nav class="lg:flex hidden">
-        <router-link class="m-5 cursor-pointer rounded-full link-btn" to="/">
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/">
           Home
         </router-link>
-        <router-link class="m-5 cursor-pointer rounded-full link-btn" to="/antminer">
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/antminer">
           Antminer
         </router-link>
-        <router-link class="m-5 cursor-pointer rounded-full link-btn" to="/about">
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/avalon">
+          Avalon
+        </router-link>
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/whatsminer">
+          Whatsminer
+        </router-link>
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/about">
           About
         </router-link>
       </nav>
