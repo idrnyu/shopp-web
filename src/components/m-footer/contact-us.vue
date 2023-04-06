@@ -3,7 +3,7 @@
 
 <template>
   <div class="contact">
-    <div class="mx-auto lg:w-9/12 w-11/12 max-w-7xl flex">
+    <div class="content flex">
       <div class="c-col">
         <h5 class="c-title">CONTACT US</h5>
         <div class="c-content">

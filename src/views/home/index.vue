@@ -33,7 +33,7 @@ import HotSaleVue from './hot-sale.vue';
       </swiper-slide>
     </swiper>
 
-    <div class="mx-auto lg:w-9/12 w-11/12 max-w-7xl">
+    <div class="content">
       <DescribeVue />
       <HotSaleVue />
     </div>

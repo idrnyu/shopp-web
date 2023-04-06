@@ -12,7 +12,7 @@ fetch('/', { method: 'HEAD' }).then((e) => date.value = e.headers.get('Date'));
   <footer style="border-top: 1px solid #e5e5e5;">
     <ContactUs />
     <div class="copyright">
-      <div class="mx-auto lg:w-9/12 w-11/12 max-w-7xl h-full" style="line-height: 52px;">
+      <div class="content h-full" style="line-height: 52px;">
         Copyright © {{ new Date(date).getFullYear() }} <a href="/">{{ url }}</a>. All Rights Reserved.
       </div>
     </div>

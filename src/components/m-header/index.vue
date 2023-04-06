@@ -16,7 +16,7 @@ nextTick(() => {
 <template>
   <header class="w-full sticky top-0 z-50 bg-[#128aedb3]"
     :class="markState ? 'lg:absolute lg:bg-[#ffffff33] lg:h-28 h-16' : 'lg:fixed lg:bg-[#128aedb3] h-16'">
-    <div class="flex items-center lg:justify-start justify-between h-full mx-auto lg:w-9/12 w-11/12 max-w-7xl">
+    <div class="flex items-center lg:justify-start justify-between h-full mx-auto content">
       <div class="mr-24">logo</div>
       <nav class="lg:flex hidden">
         <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/">
