@@ -108,6 +108,9 @@ const data = [
 <style scoped>
 .product-list {
   margin: 20px 0;
+
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, 300px); */
 }
 .product-list::after {
   content: "";
