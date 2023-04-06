@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import { ProductCardData } from './type';
 
+import { numFormat } from '@/utils/index';
+
 interface Props {
   data: ProductCardData;
 }
@@ -20,8 +22,8 @@ withDefaults(defineProps<Props>(), {});
         {{ data?.title }}
       </p>
       <div class="font-semibold">
-        <span class="text-blue-500">${{ data?.price }}</span>
-        <span class="line-through text-gray-400 ml-3">${{ data?.originalcost }}</span>
+        <span class="text-blue-500">${{ numFormat(data?.price) }}</span>
+        <span class="line-through text-gray-400 ml-3">${{ numFormat(data?.originalcost) }}</span>
       </div>
     </div>
   </router-link>

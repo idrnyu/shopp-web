@@ -12,7 +12,7 @@ const data = [
     img2: getImageUrl('./img/antminer-test2.png'),
     title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
     price: '100',
-    originalcost: '200',
+    originalcost: '200000588.556',
   },
   {
     id: 2,
