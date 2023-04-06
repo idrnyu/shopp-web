@@ -2,7 +2,7 @@
   <div class="py-10">
     <div class="sm:flex">
       <div class="flex-1">
-        <img src="../../assets/Antminer/Antminer-KA3-166Ths.png" alt="">
+        <img src="../../assets/antminer/antminer-KA3-166Ths.png" alt="">
       </div>
       <!-- <div class="flex-1 sm:mt-0 mt-[20px] px-4 sm:flex sm:flex-col sm:justify-center"> -->
       <div class="flex-1 sm:mt-20 mt-[20px] px-[5%]">
@@ -15,7 +15,7 @@
     </div>
     <div class="sm:flex flex-row-reverse mt-8">
       <div class="flex-1">
-        <img src="../../assets/Antminer/Antminer-KA3-166Ths.png" alt="">
+        <img src="../../assets/antminer/antminer-KA3-166Ths.png" alt="">
       </div>
       <!-- <div class="flex-1 sm:mt-0 mt-[20px] px-4 sm:flex sm:flex-col sm:justify-center"> -->
       <div class="flex-1 sm:mt-20 mt-[20px] px-[5%]">

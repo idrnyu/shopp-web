@@ -21,6 +21,16 @@ const routes: Readonly<RouteRecordRaw[]> = [
     component: () => import('../views/antminer/index.vue'),
   },
   {
+    path: '/avalon',
+    name: 'Avalon',
+    component: () => import('../views/avalon/index.vue'),
+  },
+  {
+    path: '/whatsminer',
+    name: 'Whatsminer',
+    component: () => import('../views/whatsminer/index.vue'),
+  },
+  {
     path: '/about',
     name: 'About',
     component: () => import('../views/about/index.vue'),
