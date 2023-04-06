@@ -5,28 +5,27 @@ const getImageUrl = (name: string) => {
   return new URL(name, import.meta.url).href;
 }
 
-            
 const data = [
   {
     id: 1,
-    img1: getImageUrl('@/assets/avalon/avalon-01.png'),
-    img2: getImageUrl('@/assets/avalon/avalon-01.png'),
+    img1: getImageUrl('./img/avalon-01.png'),
+    img2: '',
     title: 'Canaan Avalon 1246 83TH BTC Bitcoin Miner Asic Miner 3155W Crypto Mining Machine',
     price: '100',
     originalcost: '200',
   },
   {
     id: 2,
-    img1: getImageUrl('@/assets/avalon/avalon-01.png'),
-    img2: getImageUrl('@/assets/avalon/avalon-01.png'),
+    img1: getImageUrl('./img/avalon-01.png'),
+    img2: '',
     title: 'Canaan Avalon 1166pro 72TH Asic Miner, 3276W Bitcoin Miner Crypto Mining Machine',
     price: '100',
     originalcost: '200',
   },
   {
     id: 3,
-    img1: getImageUrl('@/assets/antminer/antminer-test1.png'),
-    img2: getImageUrl('@/assets/antminer/antminer-test1.png'),
+    img1: getImageUrl('./img/avalon-01.png'),
+    img2: '',
     title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
     price: '100',
     originalcost: '200',
