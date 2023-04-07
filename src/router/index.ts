@@ -16,19 +16,28 @@ const routes: Readonly<RouteRecordRaw[]> = [
     component: () => import('../views/home/index.vue'),
   },
   {
-    path: '/antminer',
-    name: 'Antminer',
-    component: () => import('../views/antminer/index.vue'),
-  },
-  {
-    path: '/avalon',
-    name: 'Avalon',
-    component: () => import('../views/avalon/index.vue'),
-  },
-  {
-    path: '/whatsminer',
-    name: 'Whatsminer',
-    component: () => import('../views/whatsminer/index.vue'),
+    path: '/:type(antminer|avalon|whatsminer)',
+    name: 'Type',
+    redirect: { name: 'Product' },
+    children: [
+      {
+        path: 'product',
+        name: 'Product',
+        redirect: { name: 'ProductList' },
+        children: [
+          {
+            path: 'list',
+            name: 'ProductList',
+            component: () => import('../views/product/list.vue'),
+          },
+          {
+            path: 'detail',
+            name: 'ProductDetail',
+            component: () => import('../views/product/detail.vue'),
+          }
+        ]
+      },
+    ],
   },
   {
     path: '/about',

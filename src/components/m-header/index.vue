@@ -22,13 +22,13 @@ nextTick(() => {
         <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/">
           Home
         </router-link>
-        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/antminer">
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/antminer/product">
           Antminer
         </router-link>
-        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/avalon">
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/avalon/product">
           Avalon
         </router-link>
-        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/whatsminer">
+        <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/whatsminer/product">
           Whatsminer
         </router-link>
         <router-link class="m-2 cursor-pointer rounded-full link-btn" to="/about">
@@ -56,7 +56,7 @@ nextTick(() => {
   font-size: 14px;
 }
 
-.link-exact-active,
+.link-active,
 .link-btn:hover {
   opacity: 1;
   background: rgba(255, 255, 255, .2);
