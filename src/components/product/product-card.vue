@@ -12,8 +12,8 @@ withDefaults(defineProps<Props>(), {});
 </script>
 
 <template>
-  <router-link to="/" class="product-card lg:max-w-xs max-w-sm p-[12px]">
-    <div class="min-w-[300px] min-h-[300px] product-img">
+  <router-link to="/" class="product-card lg:max-w-[304px] max-w-sm p-[12px]">
+    <div class="min-w-[200px] min-h-[200px] product-img">
       <img :src="data?.img1" alt="" :class="{ 'img1': data?.img2 }">
       <img v-if="data?.img2" :src="data.img2" alt="" class="img2">
     </div>

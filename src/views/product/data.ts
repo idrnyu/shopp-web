@@ -84,7 +84,7 @@ export const PRODUCT_LIST = {
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
       price: '100',
       originalcost: '200',
-    }
+    },
   ],
   avalon: [
     {
@@ -158,5 +158,5 @@ export const PRODUCT_LIST = {
 
 // 产品详情信息
 export const PRODUCT_DETAIL = [
-  
+
 ];

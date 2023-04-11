@@ -29,10 +29,34 @@ withDefaults(defineProps<Props>(), {
 <style scoped>
 .product-list {
   margin: 20px 0;
-
+  
   /* display: grid;
-  grid-template-columns: repeat(auto-fill, 300px); */
+  grid-template-columns: repeat(auto-fill, 304px);
+  gap: 1rem; */
 }
+.product-item {
+  background: aquamarine;
+  margin: 10px;
+}
+.product-item:first-of-type {
+  margin-left: 0;
+}
+
+@media (min-width: 1702px) {
+  .product-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .product-item:nth-child(4n+1) {
+    margin-left: 0;
+  }
+}
+
+/* @media (max-width: 27em) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
 .product-list::after {
   content: "";
   display: block;
