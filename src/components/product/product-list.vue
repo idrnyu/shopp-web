@@ -15,7 +15,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div class="content my-12">
+  <div class="mb-12 mt-6">
     <div class="flex justify-between items-end">
       <div class="text-3xl font-semibold">{{ title }}</div>
       <div>sort</div>
