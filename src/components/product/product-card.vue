@@ -12,7 +12,7 @@ withDefaults(defineProps<Props>(), {});
 </script>
 
 <template>
-  <router-link to="/" class="product-card p-[12px]">
+  <div class="product-card p-[12px]">
     <div class="min-w-[200px] min-h-[200px] product-img">
       <img :src="data?.img1" alt="" :class="{ 'img1': data?.img2 }">
       <img v-if="data?.img2" :src="data.img2" alt="" class="img2">
@@ -26,7 +26,7 @@ withDefaults(defineProps<Props>(), {});
         <span class="line-through text-gray-400 ml-3">${{ numFormat(data?.originalcost) }}</span>
       </div>
     </div>
-  </router-link>
+  </div>
 </template>
 
 <style scoped>
