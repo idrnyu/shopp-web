@@ -29,43 +29,26 @@ withDefaults(defineProps<Props>(), {
 <style scoped>
 .product-list {
   margin: 20px 0;
-  
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, 304px);
-  gap: 1rem; */
-}
-.product-item {
-  background: aquamarine;
-  margin: 10px;
-}
-.product-item:first-of-type {
-  margin-left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
-@media (min-width: 1702px) {
-  .product-item:nth-child(4n) {
-    margin-right: 0;
-  }
-  .product-item:nth-child(4n+1) {
-    margin-left: 0;
+@media (max-width: 1447px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* @media (max-width: 27em) {
-  .container {
+@media (max-width: 775px) {
+  .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
-} */
-
-.product-list::after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+}
+@media (max-width: 509px) {
+  .product-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
-.product-item {
-  float: left;
-}
 </style>
