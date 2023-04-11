@@ -52,6 +52,15 @@ const router = createRouter({
   routes,
   linkActiveClass: 'link-active',
   linkExactActiveClass: 'link-exact-active',
+  scrollBehavior: (to, form) => {
+    if (to.path !== form.path) {
+      const mainBoxDom = document.querySelector('#shopp');
+      if (mainBoxDom) {
+        mainBoxDom.scrollTop = 0;
+      }
+      return { top: 0 };
+    }
+  },
 });
 
 export default router;
