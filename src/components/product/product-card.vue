@@ -37,7 +37,7 @@ withDefaults(defineProps<Props>(), {});
 }
 
 .product-card:hover {
-  box-shadow: 0 0.35em 1.175em hsla(207, 86%, 50%, 0.16), 0 0.175em 0.5em hsla(207, 86%, 50%, 0.16);
+  box-shadow: 0 0 9px 1px hsla(207, 86%, 50%, 0.16), 0 0 9px 1px hsla(207, 86%, 50%, 0.16);
 }
 
 .product-img {

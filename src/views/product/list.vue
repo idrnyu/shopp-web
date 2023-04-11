@@ -18,7 +18,6 @@ const data = computed(() => {
 
 <template>
   <div>
-    <div class="lg:h-28 none bg-gradient-to-br from-[#008cfe] to-[#128aed]"></div>
     <ProductList title="Avalon" :data="data" />
   </div>
 </template>
