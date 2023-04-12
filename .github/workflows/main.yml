@@ -35,21 +35,11 @@ jobs:
         run: npm run build
 
       # 将打包好的dist文件复制到项目
-      - name: 复制打包好的文件到新分支
-        run: |
-          pwd
-          ls -l
-          git push origin --delete www
-          cd ./dist
-          git config --global user.email "834999326@qq.com"
-          git config --global user.name idrnyu-ci
-          git init
-          git add .
-          git commit -m "build out dist commit"
-          git remote add origin https://github.com/idrnyu/shopp-web.git
-          git pull
-          git checkout -b www
-          git push --set-upstream origin www
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@4.3.3
+        with:
+          branch: www #部署提交到的分支
+          folder: dist # 打包好的目录
 
 
         
