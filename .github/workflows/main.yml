@@ -39,6 +39,7 @@ jobs:
         run: |
           pwd
           ls -l
+          git push origin --delete www
           cd ./dist
           git config --global user.email "834999326@qq.com"
           git config --global user.name idrnyu-ci
@@ -47,8 +48,8 @@ jobs:
           git commit -m "build out dist commit"
           git remote add origin https://github.com/idrnyu/shopp-web.git
           git pull
-          git branch
-          git push -u origin www -f
+          git checkout -b www
+          git push --set-upstream origin www
 
         
         
