@@ -46,7 +46,9 @@ jobs:
           git add .
           git commit -m "build out dist commit"
           git remote add origin https://github.com/idrnyu/shopp-web.git
-          git push -u origin www -f
+          git branch
+
+        # git push -u origin www -f
 
         
         
