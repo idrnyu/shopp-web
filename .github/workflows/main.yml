@@ -16,25 +16,27 @@ jobs:
     # 任务步骤
     steps:
       # actions 拉代码到当前环境
-      - uses: actions/checkout@v3
+      - name: git checkout
+        uses: actions/checkout@v3
       
       # 设置 node 环境  如果不知道可以再 Marketplace 下搜索
-      - name: install NodeJs 环境
+      - name: install NodeJs env
         uses: actions/setup-node@v3
         # 安装 node 的具体命令
         with:
           node-version: "16.13.x"
       
       # 给项目安装依赖
-      - name: npm install 安装依赖
+      - name: npm install
         run: npm install
       
       # 打包项目
-      - name: npm run build 打包代码
+      - name: npm run build
         run: npm run build
       
       # 将打包好的dist文件复制到项目
-      # - name: 复制打包好的文件
+      - name: 复制打包好的文件到新分支
+        run: git branch -a
         
         
         
