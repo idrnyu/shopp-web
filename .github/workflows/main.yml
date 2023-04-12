@@ -40,6 +40,8 @@ jobs:
           pwd
           ls -l
           cd ./dist
+          git config --global user.email "834999326@qq.com"
+          git config --global user.name idrnyu-ci
           git init
           git add .
           git commit -m "build out dist commit"
