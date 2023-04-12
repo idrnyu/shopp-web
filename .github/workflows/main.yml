@@ -36,8 +36,16 @@ jobs:
       
       # 将打包好的dist文件复制到项目
       - name: 复制打包好的文件到新分支
-        run: pwd && ls -l
-        
+        run: |
+          pwd
+          ls -l
+          cd ./dist
+          git init
+          git add .
+          git commit -m "build out dist commit"
+          git remote add origin https://github.com/idrnyu/shopp-web.git
+          git push -u origin www -f
+
         
         
         
