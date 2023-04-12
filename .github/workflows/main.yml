@@ -34,14 +34,6 @@ jobs:
       - name: npm run build
         run: npm run build
 
-      - name: 发布
-          deploy:
-          type: git   # 使用 Git 提交
-          # repository: git@github.com:idrnyu/idrnyu.github.io.git  # 提交到的仓库   SSH 
-          repo: https://github.com/idrnyu/shopp-web.git
-          branch: www  # 提交到 www 分支
-          # message: 添加域名解析
-      
       # 将打包好的dist文件复制到项目
       # - name: 复制打包好的文件到新分支
       #   run: |
@@ -58,6 +50,13 @@ jobs:
       #     git pull
       #     git checkout -b www
       #     git push --set-upstream origin www
+
+  deploy:
+    type: git   # 使用 Git 提交
+    # repository: git@github.com:idrnyu/idrnyu.github.io.git  # 提交到的仓库   SSH 
+    repo: https://github.com/idrnyu/shopp-web.git
+    branch: www  # 提交到 www 分支
+    # message: 添加域名解析
 
         
         
