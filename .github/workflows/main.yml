@@ -36,7 +36,7 @@ jobs:
 
       # 将打包好的dist文件复制到项目
       - name: deploy
-        uses: JamesIves/github-pages-deploy-action@4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: www #部署提交到的分支
           folder: dist # 打包好的目录
