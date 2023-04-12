@@ -35,28 +35,22 @@ jobs:
         run: npm run build
 
       # 将打包好的dist文件复制到项目
-      # - name: 复制打包好的文件到新分支
-      #   run: |
-      #     pwd
-      #     ls -l
-      #     git push origin --delete www
-      #     cd ./dist
-      #     git config --global user.email "834999326@qq.com"
-      #     git config --global user.name idrnyu-ci
-      #     git init
-      #     git add .
-      #     git commit -m "build out dist commit"
-      #     git remote add origin https://github.com/idrnyu/shopp-web.git
-      #     git pull
-      #     git checkout -b www
-      #     git push --set-upstream origin www
+      - name: 复制打包好的文件到新分支
+        run: |
+          pwd
+          ls -l
+          git push origin --delete www
+          cd ./dist
+          git config --global user.email "834999326@qq.com"
+          git config --global user.name idrnyu-ci
+          git init
+          git add .
+          git commit -m "build out dist commit"
+          git remote add origin https://github.com/idrnyu/shopp-web.git
+          git pull
+          git checkout -b www
+          git push --set-upstream origin www
 
-      deploy:
-        type: git   # 使用 Git 提交
-        # repository: git@github.com:idrnyu/idrnyu.github.io.git  # 提交到的仓库   SSH 
-        repo: https://github.com/idrnyu/shopp-web.git
-        branch: www  # 提交到 www 分支
-        # message: 添加域名解析
 
         
         
