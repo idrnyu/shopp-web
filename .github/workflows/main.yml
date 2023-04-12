@@ -34,7 +34,7 @@ jobs:
         run: npm run build
       
       # 将打包好的dist文件复制到项目 使用scp  如果不知道可以再 Marketplace 下搜索
-      - name: 复制打包好的文件
+      # - name: 复制打包好的文件
         
         
         
