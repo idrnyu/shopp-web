@@ -40,7 +40,6 @@ jobs:
         # https://github.com/marketplace/actions/deploy-to-github-pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          run: echo "hello"
           token: ${{ secrets.SHOP_CI_TOKEN }}
           branch: www #部署提交到的分支
           folder: dist # 打包好的目录
