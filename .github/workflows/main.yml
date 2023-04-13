@@ -15,7 +15,7 @@ jobs:
 
     # 输出映射
     outputs:
-      test: ${{ steps.distFile.outputs.test }}
+      test: ${{ steps.distFile.outputs.testConsole }}
     
     # 任务步骤
     steps:
@@ -38,9 +38,9 @@ jobs:
       - name: npm run build
         run: npm run build
 
-      # - name: 工作流的输出准备
-      - id: distFile
-        run: echo "::set-output name=test::console测试，传递给子任务"
+      # - id: distFile
+      - name: 工作流的输出准备
+        run: echo "{name}={testConsole}" >> console测试，传递给子任务
 
       # 将打包好的dist文件复制到项目
       - name: Upload the dist file to the www branch
