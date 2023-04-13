@@ -35,8 +35,8 @@ jobs:
         run: npm install
       
       # 打包项目
-      - name: npm run build
-        run: npm run build
+      - name: npm run build:github
+        run: npm run build:github
 
       # 将打包好的dist文件复制到项目
       - name: Upload the dist file to the www branch
@@ -58,6 +58,7 @@ jobs:
         run: |
           pwd
           echo ${{ needs.build.outputs.test }}
+          exit
         
         
   
