@@ -39,7 +39,7 @@ jobs:
         run: npm run build
 
       - id: distFile
-        run: echo "{name}={testConsole}" >> console测试，传递给子任务
+        run: echo "{testConsole}={console测试，传递给子任务}" >> $GITHUB_STATE
 
       # 将打包好的dist文件复制到项目
       - name: Upload the dist file to the www branch
