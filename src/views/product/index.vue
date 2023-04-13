@@ -25,7 +25,7 @@ const pathList = computed<PathList[]>(() => {
 
 <template>
   <div>
-    <div class="lg:h-28 none bg-gradient-to-br from-[#008cfe] to-[#128aed]"></div>
+    <div class="md:h-28 none bg-gradient-to-br from-[#008cfe] to-[#128aed]"></div>
     <div class="content">
       <Breadcrumb :pathList="pathList" />
       <router-view></router-view>
