@@ -39,7 +39,6 @@ jobs:
         run: npm run build
 
       - id: distFile
-      - name: 工作流的输出准备
         run: echo "{name}={testConsole}" >> console测试，传递给子任务
 
       # 将打包好的dist文件复制到项目
