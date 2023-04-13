@@ -15,7 +15,7 @@ jobs:
 
     # 输出映射
     outputs:
-      test: ${{ steps.distFile.outputs.testConsole }}
+      test: ${{ steps.distFile.testConsole }}
     
     # 任务步骤
     steps:
