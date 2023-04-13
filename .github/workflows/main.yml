@@ -35,7 +35,7 @@ jobs:
         run: npm run build
 
       # 将打包好的dist文件复制到项目
-      - name: deploy
+      - name: Upload the dist file to the www branch
         # Deploy to GitHub Pages
         # https://github.com/marketplace/actions/deploy-to-github-pages
         uses: JamesIves/github-pages-deploy-action@v4.4.1
