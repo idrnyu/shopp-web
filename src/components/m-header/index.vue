@@ -84,6 +84,7 @@ const miniMenuState = ref(true);
 }
 
 .link-active,
+.mini-menu .link-active,
 .link-btn:hover {
   opacity: 1;
   background: rgba(255, 255, 255, .2);
@@ -93,10 +94,6 @@ const miniMenuState = ref(true);
   opacity: .8;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
-}
-.mini-menu .link-active {
-  opacity: 1;
-  background: rgba(255, 255, 255, .2);
 }
 
 .third{
