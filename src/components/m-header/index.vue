@@ -21,7 +21,9 @@ const miniMenuState = ref(true);
     :style="miniMenuState ? 'background-color: #128aed' : ''">
     <div class="h-full">
       <div class="flex items-center md:justify-start justify-between h-full mx-auto content">
-        <div class="mr-24">logo</div>
+        <div class="mr-24">
+          <img src="../../../public/logo.png" alt="" class="md:w-[70px] w-[40px]">
+        </div>
         <nav class="md:flex hidden">
           <router-link class="m-2 lg:px-[25px] px-[20px] py-[5px] cursor-pointer rounded-full link-btn" to="/">
             Home
