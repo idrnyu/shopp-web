@@ -15,7 +15,7 @@ jobs:
 
     # 输出映射
     outputs:
-      test: ${{ steps.distFile.testConsole }}
+      test: 我还不会动态传参
     
     # 任务步骤
     steps:
@@ -37,9 +37,6 @@ jobs:
       # 打包项目
       - name: npm run build
         run: npm run build
-
-      - id: distFile
-        run: echo "{testConsole}={console测试，传递给子任务}" >> $GITHUB_STATE
 
       # 将打包好的dist文件复制到项目
       - name: Upload the dist file to the www branch
