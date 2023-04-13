@@ -58,7 +58,7 @@ jobs:
         run: |
           ls -l
           pwd
-          echo ${{ needs.build }}
+          echo ${{ needs.build.outputs.dist }}
         
         
   
