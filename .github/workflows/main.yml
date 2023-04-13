@@ -40,7 +40,7 @@ jobs:
       - name: npm run build
         run: npm run build
 
-      - name: 工作流的输出准备
+      # - name: 工作流的输出准备
       - id: distFile
         run: echo "::set-output name=test::测试输出"
 
