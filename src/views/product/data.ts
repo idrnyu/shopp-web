@@ -10,7 +10,7 @@ export const PRODUCT_LIST = {
   antminer: [
     {
       id: 1,
-      img1: '/imgs/antminer/antminer-test1.png',
+      img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,  // 或者使用绝对路径
       img2: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
       price: '100',
