@@ -10,9 +10,9 @@ export const PRODUCT_LIST = {
   antminer: [
     {
       id: 1,
-      img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
+      img1: '/src/views/product/imgs/antminer/antminer-test1.png',
       img2: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
-      title: '111Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
+      title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
       price: '100',
       originalcost: '200000588.556',
     },
