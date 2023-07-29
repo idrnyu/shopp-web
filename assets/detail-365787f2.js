@@ -1,0 +1,1 @@
+import{j as t,o,c as a,v as n,u as s,z as r}from"./index-de4d4c47.js";const _=t({__name:"detail",setup(u){const e=r();return(c,l)=>(o(),a("div",null," 详情页面 "+n(s(e).query.q),1))}});export{_ as default};
