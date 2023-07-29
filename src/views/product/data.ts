@@ -25,7 +25,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 3,
       img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       img2: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -33,7 +33,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 4,
       img1: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       img2: '',
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -41,7 +41,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 5,
       img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       img2: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -49,7 +49,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 6,
       img1: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       img2: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -57,7 +57,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 7,
       img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       img2: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -65,7 +65,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 8,
       img1: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       img2: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -73,7 +73,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 9,
       img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       img2: '',
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -81,7 +81,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 2,
+      id: 10,
       img1: new URL('./imgs/antminer/antminer-test1.png', import.meta.url).href,
       img2: new URL('./imgs/antminer/antminer-test2.png', import.meta.url).href,
       title: 'Antminer S19J pro104th/s Bicoin Miner 3120w Asic Miner Cheaper Than Antminer S19pro  110th',
@@ -141,7 +141,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 3,
+      id: 4,
       img1: new URL('./imgs/whatsminer/whatsminer-test1.png', import.meta.url).href,
       img2: new URL('./imgs/whatsminer/whatsminer-test2.png', import.meta.url).href,
       title: 'Asic Bitcoin Miner Whatsminer M30s 90T 3420w Bitcoin Mining',
@@ -149,7 +149,7 @@ export const PRODUCT_LIST = {
       originalcost: '200',
     },
     {
-      id: 3,
+      id: 5,
       img1: new URL('@/assets/antminer/antminer-test1.png', import.meta.url).href,
       img2: '',
       title: 'Whatminer M30S++ 110TH 3410W Cyypto Bitcoin Miner Asic Miner Mining Miner in Stock',

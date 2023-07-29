@@ -21,7 +21,7 @@ withDefaults(defineProps<Props>(), {
       <div>sort</div>
     </div>
     <div class="product-list">
-      <router-link :to="{name: 'ProductDetail', query: {q: item.id}}" class="product-item" v-for="item in data" :key="item.id">
+      <router-link :to="{name: 'ProductDetail', query: {q: item.id}}" class="product-item" v-for="item in data" :key="item.id + title">
         <ProductCard :data="item" />
       </router-link>
     </div>
