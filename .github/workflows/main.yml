@@ -1,6 +1,11 @@
 name: CI  # 任务名称
 
+# 事件
 on:
+  # push master 分支的时候触发；
+  push:
+    branches: [ master ]
+
   workflow_dispatch:
     inputs:
       logLevel:
@@ -20,12 +25,6 @@ on:
         description: 'Environment to run tests against'
         type: environment
         required: true
-
-# 事件
-on:
-  # push master 分支的时候触发；
-  push:
-    branches: [ master ]
 
 # 工作流运行由一个或多个任务组成，这些任务按顺序或并行运行
 jobs:
