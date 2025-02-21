@@ -5,26 +5,26 @@ on:
   # push master 分支的时候触发；
   push:
     branches: [ master ]
-
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: true
+  # 手动触发工作流；
+  # workflow_dispatch:
+  #   inputs:
+  #     logLevel:
+  #       description: 'Log level'
+  #       required: true
+  #       default: 'warning'
+  #       type: choice
+  #       options:
+  #       - info
+  #       - warning
+  #       - debug
+  #     tags:
+  #       description: 'Test scenario tags'
+  #       required: false
+  #       type: boolean
+  #     environment:
+  #       description: 'Environment to run tests against'
+  #       type: environment
+  #       required: true
 
 # 工作流运行由一个或多个任务组成，这些任务按顺序或并行运行
 jobs:
