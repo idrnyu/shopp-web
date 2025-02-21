@@ -42,8 +42,6 @@ jobs:
       # actions 拉代码到当前环境
       - name: git checkout
         uses: actions/checkout@v3
-        with:
-          lfs: true
       
       # 设置 node 环境  如果不知道可以再 Marketplace 下搜索
       - name: install NodeJs env
